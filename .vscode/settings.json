@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.nani": "naniscript",
+        "*.js": "javascriptreact",
+        "*.php": "blade",
+        "ostream": "cpp"
+    }
+}

@@ -1,6 +1,7 @@
 
 c6n:
 	make compile-fr dir=ch-6 f=test
+	make compile-fr dir=ch-6 f=ex3
 
 save:
 	git add --all
