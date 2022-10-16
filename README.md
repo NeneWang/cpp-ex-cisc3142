@@ -17,3 +17,16 @@ I was playing with Unit testing from this tutorial
 Requirements:
 - [acutest](https://github.com/mity/acutest/blob/master/include/acutest.h)
 
+```
+curl https://raw.githubusercontent.com/mity/acutest/master/include/acutest.h > acutest.hpp
+```
+
+
+![](./img/2022-10-16-19-46-33.png)
+
+## Ubuntu Requirements
+
+- gnu compiler
+- 
+
+
