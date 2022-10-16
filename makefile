@@ -6,6 +6,7 @@ c6n:
 save:
 	git add --all
 	git commit -m "Random Progress form Nelson :tada:"
+	git pull
 	git push origin HEAD
 
 compile-farg: 
