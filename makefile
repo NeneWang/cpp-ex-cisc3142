@@ -1,5 +1,5 @@
 
-c6:
+c6n:
 	make compile-fr dir=ch-6 f=test
 
 save:
