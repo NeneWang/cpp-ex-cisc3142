@@ -1,6 +1,6 @@
 #include "acutest.hpp"
+#include "another_func.cpp"
 #include "util.hpp"
-#include "another_func.hpp"
 
 void test_add(void){
     TEST_CHECK_(add(2, 2) == (2+2), "add(%d, %d)==%d", 2, 2, (2+2));
@@ -14,7 +14,7 @@ void test_fail(void){
 }
 
 void test_get1(void){
-    TEST_CHECK_(getTwo() == 1, "Test string");
+    TEST_CHECK_(getTwo() == 2, "Test string");
 }
 
 
