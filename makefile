@@ -6,6 +6,7 @@ c6n:
 	make compile-fr dir=ch-6 f=ex10
 	make compile-fr dir=ch-6 f=ex12
 	make compile-fr dir=ch-6 f=test_unit
+	make compile-fr dir=ch-6 f=ex24
 
 save:
 	git add --all

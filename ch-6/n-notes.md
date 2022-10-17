@@ -61,9 +61,49 @@ Exercise 6.21: Write a function that takes an int and a pointer to an int and re
 the larger of the int value or the value to which the pointer points. What type should
 you use for the pointer?
 
+```cpp title="ex21.cpp"
+
+int getLarger(int val, int *pointer){
+    return  max(val, *pointer);
+}
+
+```
 
 
+To test this I added the test in `test_unit.cpp`
+
+```cpp
+#include "acutest.hpp"
+#include "ex21.cpp"
+
+void test21(void){
+
+    int val1= 21;
+    int val2= 40;
+    int *val2p = &val2;
+    TEST_CHECK_(getLarger(val1, val2p) == (*val2p), "add");
+
+    val1+=30;
+    TEST_CHECK_(getLarger(val1, val2p) == (val1), "add");
+}
 
 
+TEST_LIST = {
+    {"Test Ex.21", test21},
+    {0}
+};
+```
+
+### 6.24
+
+Exercise 6.24: Explain the behavior of the following function. If there are problems in
+the code, explain what they are and how you might fix them
+
+![](./../img/2022-10-16-21-04-10.png)
+
+```
+The problem that seems to be here, is that if the array is larger than the requested size.
+It will print some unrelated values. 
+```
 
 
