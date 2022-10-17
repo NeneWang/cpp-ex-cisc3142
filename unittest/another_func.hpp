@@ -1,1 +1,1 @@
-int print1();
+int getTwo();
