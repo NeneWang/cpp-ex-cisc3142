@@ -13,5 +13,4 @@ int main(){
     swap(&a, &b);
 
     cout << "a is: " << a << endl;
-    
 }
