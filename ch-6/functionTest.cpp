@@ -2,13 +2,14 @@
 //#include "ex6.4cesar.cpp"
 //#include "ex6.5cesar.cpp"
 //#include "ex6.7cesar.cpp"
-#include "ex6.3cesar.hpp"
+#include "allFunctions.hpp"
 
 
 using namespace std;
 
 int main() {
-    cout << fact(5) << endl;
+    cout << "Gol" << endl;
+    //cout << fact(5) << endl;
     
     /*
     prompt_count_calls();

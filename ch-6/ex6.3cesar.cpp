@@ -1,4 +1,4 @@
-#include "ex6.3cesar.hpp"
+#include "allFunctions.hpp"
 #include<iostream>
 
 // Calculates factorial using recursive method

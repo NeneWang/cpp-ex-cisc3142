@@ -1,17 +1,22 @@
 
 c&r:
+	make compile-c f=ex6.3cesar
+	make compile-c f=ex6.4cesar
+	make compile-c f=ex6.5cesar
+	make compile-c f=ex6.7cesar
+
+
 	make compile-fr f=functionTest
 
 save:
 	git add --all
-	git commit -m "Update"
+	git commit -m "Updated by César"
 	git pull
 	git push origin HEAD
 
 
-compile-farg: 
-	cd ${dir} && g++ ${f}.cpp -o ${f} 
-	cd ${dir} && ./${f} < inputfile
+compile-c: 
+	g++ -c ${f}.cpp
 
 
 compile-fr: 
@@ -22,3 +27,9 @@ compile-fr:
 compile-fin: 
 	cd ${dir} && g++ ${f}.cpp -o ${f} 
 	cd ${dir} && ./${f} < ${inputfile}
+
+
+delexe:
+	rm *.o
+	rm *.exe
+	rm *.out
