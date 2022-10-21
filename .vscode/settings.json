@@ -3,6 +3,7 @@
         "*.nani": "naniscript",
         "*.js": "javascriptreact",
         "*.php": "blade",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "cstdlib": "cpp"
     }
 }

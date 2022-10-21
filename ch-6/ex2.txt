@@ -1,5 +1,0 @@
-Functions that are in error and why:
-a) It is returning the wrong data type
-b) It is missing the return type in the header of the method
-c) It is missing the opening curly brackets '{'
-d) It is missing both curly brackets '{}'

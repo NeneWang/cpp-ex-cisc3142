@@ -1,17 +1,23 @@
 #include<iostream>
+//#include "ex6.4cesar.cpp"
+//#include "ex6.5cesar.cpp"
+//#include "ex6.7cesar.cpp"
+#include "ex6.3cesar.hpp"
+
 
 using namespace std;
 
-double square(double x) {return x*x;}
-
-void f2(int i) {}
-
-int f() {
-    string s;
-    return s;
-}
-
-
 int main() {
+    cout << fact(5) << endl;
+    
+    /*
+    prompt_count_calls();
+    
+    promptFacMessage();
 
+    cout << "Insert a number ";
+    double num = 0;
+    cin >> num;
+    cout << "The absolute value of " << num << " is " << absValue(num) << endl;
+    */
 }

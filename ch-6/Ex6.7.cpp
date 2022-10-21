@@ -6,6 +6,9 @@ int incrementor(){
   static int x= 0;
   x++;
   return (x-1);
+  // Devlin, you can also do:
+  //                          return x++;
+  // That way, you are returning the value first, and after that you are adding one.
 }
 
 
