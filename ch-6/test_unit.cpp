@@ -2,6 +2,8 @@
 #include "ex21.cpp"
 #include "ex6.27n.cpp"
 
+#include "book-examples.cpp"
+
 
 // Test this from the root make
 
@@ -38,10 +40,37 @@ void c6ex27b(void){
 
 }
 
+void shortstringa(void){
+    string sm = "a";
+    string lg = "abc";
+    TEST_CHECK_(shorterString(sm, lg) == sm, "Shortest should be a");
+}
+
+void shortstringinverse(void){
+    string sm = "a";
+    string lg = "abc";
+    TEST_CHECK_(shorterString(lg, sm) == sm, "Shortest should be a");
+}
+
+
+void shortstringChangeValues(void){
+    string sm = "a";
+    string lg = "abc";
+    TEST_CHECK_(shorterString(lg, sm) == sm, "Shortest should be a");
+    string smprima = shorterString(lg, sm);
+    smprima = "test";
+    cout << endl << smprima << endl;
+    cout << sm << endl;
+    TEST_CHECK_(sm == "test", "Shortest should be a");
+    
+}
 
 TEST_LIST = {
     {"Test Ex.21", test21},
     {"Testing c6ex27a", c6ex27a},
     {"Testing c6ex27b", c6ex27b},
+    {"shortstringa", shortstringa},
+    {"shortstringinverse", shortstringinverse},
+    {"shortstringChangeValues", shortstringChangeValues},
     {0}
 };
