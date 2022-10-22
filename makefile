@@ -1,11 +1,9 @@
 
 c6n:
 	make compile-fr dir=ch-6 f=test
-	make compile-fr dir=ch-6 f=ex3
 	make compile-fr dir=ch-6 f=ex6
 	make compile-fr dir=ch-6 f=ex10
 	make compile-fr dir=ch-6 f=ex12
-	make compile-fr dir=ch-6 f=test_unit
 	make compile-fr dir=ch-6 f=ex24
 
 save:
@@ -15,14 +13,14 @@ save:
 	git push origin HEAD
 
 compile-farg: 
-	cd ${dir} && g++ ${f}.cpp -o ${f} 
-	cd ${dir} && ./${f} < inputfile
+	cd ${dir} && g++ ${f}.cpp -o ${f}.o
+	cd ${dir} && ./${f}.o < inputfile
 
 
 compile-fr: 
-	cd ${dir} && g++ ${f}.cpp -o ${f} 
-	cd ${dir} && ./${f}
+	cd ${dir} && g++ ${f}.cpp -o ${f}.o
+	cd ${dir} && ./${f}.o
 
 compile-fin: 
-	cd ${dir} && g++ ${f}.cpp -o ${f} 
-	cd ${dir} && ./${f} < ${inputfile}
+	cd ${dir} && g++ ${f}.cpp -o ${f}.o
+	cd ${dir} && ./${f}.o < ${inputfile}
