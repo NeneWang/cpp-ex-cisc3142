@@ -107,7 +107,7 @@ It will print some unrelated values.
 ```
 
 ###	6.27
-
+![](./../img/2022-10-21-22-13-55.png)
 
 
 
