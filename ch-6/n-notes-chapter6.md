@@ -106,4 +106,26 @@ The problem that seems to be here, is that if the array is larger than the reque
 It will print some unrelated values. 
 ```
 
+###	6.27
 
+
+
+
+###	6.30
+
+
+
+###	6.33
+###	6.36
+###	6.39
+###	6.42
+###	6.45
+###	6.48
+###	6.51
+###	6.54
+###	6.57
+###	6.60
+###	6.63
+###	6.66
+###	6.69
+###	6.72
