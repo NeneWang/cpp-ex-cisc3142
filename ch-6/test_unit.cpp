@@ -6,23 +6,29 @@
 
 #include "book-examples.cpp"
 
-#include <string>
-using namespace std;
 
 // Test this from the root make
 
 void maintester(void){
     int a = 1, b = 2;
-    cout << add(a, b) << endl;
+    // add(a, b);
 
-    double da = 1, db = 2;
-    cout << add(da, db) << endl;
+    double da = 1, db = 2.2;
+    // add(da, db);
+}
+
+void testOverloadReturn(void){
+    int a = 1, b = 2;
+    // add(a, b);
+    TEST_CHECK_( add(a,b) == 3, "Returns a proper int");
+
+    double da = 1, db = 2.2;
+    TEST_CHECK_( add(da,db) == 3.2, "Returns a proper double");
 }
 
 void testReturnShortestString(void){
     string shortString = "a";
     string longString = "abcd";
-    TEST_CHECK_( shorterString(shortString, longString) == shorterString , "Testing shortest string");
 }
 
 void test_fixexc6ex27(void){
@@ -108,13 +114,14 @@ void checkisFailure(void){
 
 TEST_LIST = {
     {"maintester", maintester},
-    {"test_fixexc6ex27", test_fixexc6ex27},
-    {"Test Ex.21", test21},
-    {"Testing c6ex27a", c6ex27a},
-    {"Testing c6ex27b", c6ex27b},
-    {"shortstringa", shortstringa},
-    {"shortstringinverse", shortstringinverse},
-    {"testerror_msg", testerror_msg},
+    {"testOverloadReturn", testOverloadReturn},
+    // {"test_fixexc6ex27", test_fixexc6ex27},
+    // {"Test Ex.21", test21},
+    // {"Testing c6ex27a", c6ex27a},
+    // {"Testing c6ex27b", c6ex27b},
+    // {"shortstringa", shortstringa},
+    // {"shortstringinverse", shortstringinverse},
+    // {"testerror_msg", testerror_msg},
     // {"shortstringChangeValues", shortstringChangeValues},
     {0}
 };

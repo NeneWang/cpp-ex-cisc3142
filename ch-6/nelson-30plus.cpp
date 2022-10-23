@@ -28,20 +28,17 @@ int fixexc6ex27(initializer_list<int> il){
 }
 
 
-const string &shorterString(const string &s1, const string &s2)
+
+
+int add(int a, int b)
 {
-    return s1.size() <= s2.size() ? s1 : s2;
-}
-
-
-
-void add(int a, int b)
-{
-  cout << "sum = " << (a + b);
+//   cout << "sum = " << (a + b);
+  return a + b;
 }
  
-void add(double a, double b)
+double add(double a, double b)
 {
-    cout << endl << "sum = " << (a + b);
+    // cout << endl << "sum = " << (a + b);
+    return a+b;
 }
  
