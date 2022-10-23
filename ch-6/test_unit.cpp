@@ -2,10 +2,25 @@
 #include "ex21.cpp"
 #include "ex6.27n.cpp"
 
+#include "nelson-30plus.cpp"
+
 #include "book-examples.cpp"
 
 
 // Test this from the root make
+
+void test_fixexc6ex27(void){
+    initializer_list<int> numbers = {1, 2, 3, 4, 5};
+    TEST_CHECK_(fixexc6ex27(numbers) == 16, "initializer_list");
+}
+
+
+void testerror_msg(void){
+    initializer_list<string> errorMessages = {"Hello", "Error Message"};
+    error_msg(errorMessages);
+
+}
+
 
 void test21(void){
 
@@ -52,7 +67,6 @@ void shortstringinverse(void){
     TEST_CHECK_(shorterString(lg, sm) == sm, "Shortest should be a");
 }
 
-
 void shortstringChangeValues(void){
     string sm = "a";
     string lg = "abc";
@@ -61,9 +75,17 @@ void shortstringChangeValues(void){
     smprima = "test";
     cout << endl << smprima << endl;
     cout << sm << endl;
-    TEST_CHECK_(sm == "test", "Shortest should be a");
     
 }
+
+void checkisFailure(void){
+    bool isFail = true;
+    
+    TEST_CHECK_(isFailure(true) == EXIT_FAILURE, "Shortest be EXIT Failure");
+
+}
+
+
 
 TEST_LIST = {
     {"Test Ex.21", test21},
@@ -71,6 +93,7 @@ TEST_LIST = {
     {"Testing c6ex27b", c6ex27b},
     {"shortstringa", shortstringa},
     {"shortstringinverse", shortstringinverse},
-    {"shortstringChangeValues", shortstringChangeValues},
+    {"testerror_msg", testerror_msg},
+    // {"shortstringChangeValues", shortstringChangeValues},
     {0}
 };
