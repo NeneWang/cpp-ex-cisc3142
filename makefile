@@ -17,14 +17,14 @@ save:
 
 compile-farg: 
 	cd ${dir} && g++ ${f}.cpp -o ${f}.o
-	cd ${dir} && ./${f}.o < inputfile
+	cd ${dir} && ${f}.o < inputfile
 	
 
 
 compile-fr: 
 	cd ${dir} && g++ ${f}.cpp -o ${f}.o
-	cd ${dir} && ./${f}.o
+	cd ${dir} && ${f}.o
 
 compile-fin: 
 	cd ${dir} && g++ ${f}.cpp -o ${f}.o
-	cd ${dir} && ./${f}.o < ${inputfile}
+	cd ${dir} && ${f}.o < ${inputfile}
