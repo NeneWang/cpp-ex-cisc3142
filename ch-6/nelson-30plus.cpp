@@ -44,8 +44,9 @@ void my_int_func(int x)
     printf("%d\n", x);
 }
 
-int returnSum(int x, int y){
-    return x+y;
+int returnSum(int x, int y)
+{
+    return x + y;
 }
 
 int usingPointerFunction()
@@ -53,7 +54,6 @@ int usingPointerFunction()
     void (*foo)(int);
     foo = &my_int_func;
 
-    
     int (*returnSumVar)(int, int);
     returnSumVar = &returnSum;
 
@@ -68,10 +68,38 @@ int usingPointerFunction()
     return 0;
 }
 
-void c6s7p54(){
-    
+void c6s7p54()
+{
+
     vector<int (*)(int, int)> vectorOfFunctions;
     vectorOfFunctions.push_back(returnSum);
-    int result = (*vectorOfFunctions.at(0))(6, 12); //Should return 18
+    int result = (*vectorOfFunctions.at(0))(6, 12); // Should return 18
     cout << result << endl;
+}
+
+int returnMult(int x, int y)
+{
+    return x * y;
+}
+
+
+int returnSub(int x, int y)
+{
+    return x - y;
+}
+
+
+int returnDiv(int x, int y)
+{
+    return x / y;
+}
+
+vector<int (*)(int, int)> c6s7p55()
+{
+    vector<int (*)(int, int)> vectorOfFunctions;
+    vectorOfFunctions.push_back(returnSum);
+    vectorOfFunctions.push_back(returnMult);
+    vectorOfFunctions.push_back(returnSub);
+    vectorOfFunctions.push_back(returnDiv);
+    return vectorOfFunctions;
 }

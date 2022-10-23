@@ -20,8 +20,32 @@ void maintester(void){
 
     // usingPointerFunction();
 
-    c6s7p54();
+    // c6s7p54();
+    
 
+    // TEST_CHECK_(vectorOfFunctions.at(0))
+
+}
+
+void test_c6s7p55(void){
+    vector<int(*)(int, int)> vectorOfFunctions = c6s7p55();
+    int a = 4, b = 2;
+
+    int results[4] = {6, 8, 2, 2};
+    int resultN = 0;
+
+    cout << endl<< "Testing vector of functions:" << endl;
+    for(auto it = begin(vectorOfFunctions); it != end(vectorOfFunctions); ++it){
+        
+        // cout << (*it)(a, b) << " "<< results[resultN] << endl;
+        TEST_ASSERT_( (*it)(a, b)  == results[resultN], "Testing function..." );
+        resultN++;
+    }
+}
+
+void testVectorAdding(void){
+    
+    c6s7p54(); // Should print 6 + 12
 }
 
 
@@ -124,6 +148,8 @@ void checkisFailure(void){
 
 TEST_LIST = {
     {"maintester", maintester},
+    {"test_c6s7p55", test_c6s7p55},
+    {"testVectorAdding", testVectorAdding},
     {"testOverloadReturn", testOverloadReturn},
     // {"test_fixexc6ex27", test_fixexc6ex27},
     // {"Test Ex.21", test21},
