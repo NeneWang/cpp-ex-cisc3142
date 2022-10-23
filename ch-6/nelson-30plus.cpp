@@ -112,11 +112,9 @@ int incrementor()
 void recursivePrint(vector<int> &v0)
 {
 
-    int size = (v0.size());
-    if (size > 0)
+    int i = (v0.size()) - 1;
+    if (i >= 0)
     {
-        
-        int i = size-1;
         cout << v0[i] << " ";
         v0.pop_back();
         recursivePrint(v0);

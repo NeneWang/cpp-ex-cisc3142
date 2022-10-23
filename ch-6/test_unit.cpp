@@ -11,7 +11,11 @@
 void maintester(void)
 {
 
-    vector<int> v0(3, 4);
+}
+
+void test_recursivePrint(void){
+    
+    vector<int> v0(10, 4);
 
     recursivePrint(v0);
 }
@@ -148,6 +152,7 @@ void checkisFailure(void)
 
 TEST_LIST = {
     {"maintester", maintester},
+    {"test_recursivePrint", test_recursivePrint},
     {"test_c6s7p55", test_c6s7p55},
     {"testVectorAdding", testVectorAdding},
     {"testOverloadReturn", testOverloadReturn},
