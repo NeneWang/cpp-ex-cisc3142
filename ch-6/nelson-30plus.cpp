@@ -43,10 +43,18 @@ void my_int_func(int x)
     printf("%d\n", x);
 }
 
+int returnSum(int x, int y){
+    return x+y;
+}
+
 int usingPointerFunction()
 {
     void (*foo)(int);
     foo = &my_int_func;
+
+    
+    int (*returnSumVar)(int, int);
+    returnSumVar = &returnSum;
 
     /* call my_int_func (note that you do not need to write (*foo)(2) ) */
     foo(2);
@@ -55,6 +63,8 @@ int usingPointerFunction()
     (*foo)(4);
     (*foo)(5);
     (*foo)(1);
+
+    cout << returnSumVar(2, 3);
 
     return 0;
 }
