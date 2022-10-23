@@ -1,24 +1,23 @@
 #include "acutest.hpp"
 #include "exam-nelson.cpp"
+#include "utils.cpp"
 
 #include <iostream>
 #include <vector>
 using namespace std;
 
 
+
+
 void test_p4(void){
     vector<int> res = p4(2); //Should return 2
     TEST_ASSERT_(res.at(0) == 4, "Checking value");
+    loop_vect(res);
 
     
 }
 
 
-void loop_vect(vector<int> vect){
-    for(auto val : vect){
-        cout << val;
-    }
-}
 
 
 
