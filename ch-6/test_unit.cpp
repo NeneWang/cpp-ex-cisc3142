@@ -6,11 +6,23 @@
 
 #include "book-examples.cpp"
 
+#include <string>
+using namespace std;
 
 // Test this from the root make
 
 void maintester(void){
-    cout << shorterString("as", "b");
+    int a = 1, b = 2;
+    cout << add(a, b) << endl;
+
+    double da = 1, db = 2;
+    cout << add(da, db) << endl;
+}
+
+void testReturnShortestString(void){
+    string shortString = "a";
+    string longString = "abcd";
+    TEST_CHECK_( shorterString(shortString, longString) == shorterString , "Testing shortest string");
 }
 
 void test_fixexc6ex27(void){
