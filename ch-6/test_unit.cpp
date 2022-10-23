@@ -18,7 +18,9 @@ void maintester(void){
     // double da = 1, db = 2.2;
     // add(da, db);
 
-    usingPointerFunction();
+    // usingPointerFunction();
+
+    c6s7p54();
 
 }
 
@@ -123,13 +125,13 @@ void checkisFailure(void){
 TEST_LIST = {
     {"maintester", maintester},
     {"testOverloadReturn", testOverloadReturn},
-    {"test_fixexc6ex27", test_fixexc6ex27},
-    {"Test Ex.21", test21},
-    {"Testing c6ex27a", c6ex27a},
-    {"Testing c6ex27b", c6ex27b},
-    {"shortstringa", shortstringa},
-    {"shortstringinverse", shortstringinverse},
-    {"testerror_msg", testerror_msg},
-    {"shortstringChangeValues", shortstringChangeValues},
+    // {"test_fixexc6ex27", test_fixexc6ex27},
+    // {"Test Ex.21", test21},
+    // {"Testing c6ex27a", c6ex27a},
+    // {"Testing c6ex27b", c6ex27b},
+    // {"shortstringa", shortstringa},
+    // {"shortstringinverse", shortstringinverse},
+    // {"testerror_msg", testerror_msg},
+    // {"shortstringChangeValues", shortstringChangeValues},
     {0}
 };

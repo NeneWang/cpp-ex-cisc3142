@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdio.h>
+#include <vector>
 
 using namespace std;
 
@@ -58,13 +59,19 @@ int usingPointerFunction()
 
     /* call my_int_func (note that you do not need to write (*foo)(2) ) */
     foo(2);
+    foo(201);
     /* but if you want to, you may */
-    (*foo)(2);
-    (*foo)(4);
-    (*foo)(5);
     (*foo)(1);
 
-    cout << returnSumVar(2, 3);
+    cout << returnSumVar(2, 30);
 
     return 0;
+}
+
+void c6s7p54(){
+    
+    vector<int (*)(int, int)> vectorOfFunctions;
+    vectorOfFunctions.push_back(returnSum);
+    int result = (*vectorOfFunctions.at(0))(6, 12); //Should return 18
+    cout << result << endl;
 }
