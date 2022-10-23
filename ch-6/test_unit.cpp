@@ -9,13 +9,19 @@
 
 // Test this from the root make
 
-void maintester(void){
-    int a = 1, b = 2;
-    // add(a, b);
 
-    double da = 1, db = 2.2;
+
+void maintester(void){
+    // int a = 1, b = 2;
+    // // add(a, b);
+
+    // double da = 1, db = 2.2;
     // add(da, db);
+
+    usingPointerFunction();
+
 }
+
 
 void testOverloadReturn(void){
     int a = 1, b = 2;
@@ -25,6 +31,8 @@ void testOverloadReturn(void){
     double da = 1, db = 2.2;
     TEST_CHECK_( add(da,db) == 3.2, "Returns a proper double");
 }
+
+
 
 void testReturnShortestString(void){
     string shortString = "a";
@@ -115,13 +123,13 @@ void checkisFailure(void){
 TEST_LIST = {
     {"maintester", maintester},
     {"testOverloadReturn", testOverloadReturn},
-    // {"test_fixexc6ex27", test_fixexc6ex27},
-    // {"Test Ex.21", test21},
-    // {"Testing c6ex27a", c6ex27a},
-    // {"Testing c6ex27b", c6ex27b},
-    // {"shortstringa", shortstringa},
-    // {"shortstringinverse", shortstringinverse},
-    // {"testerror_msg", testerror_msg},
-    // {"shortstringChangeValues", shortstringChangeValues},
+    {"test_fixexc6ex27", test_fixexc6ex27},
+    {"Test Ex.21", test21},
+    {"Testing c6ex27a", c6ex27a},
+    {"Testing c6ex27b", c6ex27b},
+    {"shortstringa", shortstringa},
+    {"shortstringinverse", shortstringinverse},
+    {"testerror_msg", testerror_msg},
+    {"shortstringChangeValues", shortstringChangeValues},
     {0}
 };
