@@ -1,3 +1,6 @@
+//#pointerPracice
+//prgram to demonstrate methods to change either the pointer or value of
+//object that pointer points to.
 #include <iostream>
 
 using namespace std;
