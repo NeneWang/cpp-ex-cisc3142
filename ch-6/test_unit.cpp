@@ -10,25 +10,26 @@
 
 void maintester(void)
 {
-    // int a = 1, b = 2;
-    // // add(a, b);
 
-    // double da = 1, db = 2.2;
-    // add(da, db);
+}
 
-    // usingPointerFunction();
+void test_recursivePrint(void){
+    
+    vector<int> v0(10, 4);
 
-    // c6s7p54();
+    recursivePrint(v0);
+}
+
+void test_incrementor(void)
+{
+
     int n = 3;
     while (n > 0)
     {
         cout << " x=" << incrementor();
         n--;
     }
-
-    // TEST_CHECK_(vectorOfFunctions.at(0))
 }
-
 void test_c6s7p55(void)
 {
     vector<int (*)(int, int)> vectorOfFunctions = c6s7p55();
@@ -151,6 +152,7 @@ void checkisFailure(void)
 
 TEST_LIST = {
     {"maintester", maintester},
+    {"test_recursivePrint", test_recursivePrint},
     {"test_c6s7p55", test_c6s7p55},
     {"testVectorAdding", testVectorAdding},
     {"testOverloadReturn", testOverloadReturn},

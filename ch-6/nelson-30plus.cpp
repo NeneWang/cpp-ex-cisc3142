@@ -82,12 +82,10 @@ int returnMult(int x, int y)
     return x * y;
 }
 
-
 int returnSub(int x, int y)
 {
     return x - y;
 }
-
 
 int returnDiv(int x, int y)
 {
@@ -104,10 +102,21 @@ vector<int (*)(int, int)> c6s7p55()
     return vectorOfFunctions;
 }
 
+int incrementor()
+{
+    static int x = 0;
+    x++;
+    return (x - 1);
+}
 
+void recursivePrint(vector<int> &v0)
+{
 
-int incrementor(){
-  static int x= 0;
-  x++;
-  return (x-1);
+    int i = (v0.size()) - 1;
+    if (i >= 0)
+    {
+        cout << v0[i] << " ";
+        v0.pop_back();
+        recursivePrint(v0);
+    }
 }
