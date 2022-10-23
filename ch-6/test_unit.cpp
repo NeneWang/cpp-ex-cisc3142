@@ -9,10 +9,17 @@
 
 // Test this from the root make
 
+void maintester(void){
+    cout << shorterString("as", "b");
+}
+
 void test_fixexc6ex27(void){
     initializer_list<int> numbers = {1, 2, 3, 4, 5};
-    TEST_CHECK_(fixexc6ex27(numbers) == 16, "initializer_list");
+
+    // cout << fixexc6ex27(numbers) << endl;
+    TEST_CHECK_(fixexc6ex27(numbers) == 15, "initializer_list");
 }
+
 
 
 void testerror_msg(void){
@@ -88,6 +95,8 @@ void checkisFailure(void){
 
 
 TEST_LIST = {
+    {"maintester", maintester},
+    {"test_fixexc6ex27", test_fixexc6ex27},
     {"Test Ex.21", test21},
     {"Testing c6ex27a", c6ex27a},
     {"Testing c6ex27b", c6ex27b},
