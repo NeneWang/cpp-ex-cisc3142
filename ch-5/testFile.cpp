@@ -3,7 +3,9 @@
 using namespace std;
 
 int main (){
+
 int a =100;
+int &r =a;
 int *ptr = &a;
 cout<< *ptr <<"  "<< ptr<< endl;
 

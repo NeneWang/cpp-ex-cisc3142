@@ -15,7 +15,7 @@ int b=100;
 ptr = &b;
 cout << *ptr<<"  "<< ptr<< endl;
 
-// to change the value to which poiter points:
+// to change the value to which poiter points:(new value)
 *ptr = 50;
 cout << *ptr<<"  "<< ptr<< endl;
 }
