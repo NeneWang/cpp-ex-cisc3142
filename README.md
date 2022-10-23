@@ -1,4 +1,4 @@
-# cpp-ex-cisc3142
+0# cpp-ex-cisc3142
 Solved Exercises from the book
 
 
@@ -26,7 +26,7 @@ curl https://raw.githubusercontent.com/mity/acutest/master/include/acutest.h > a
 
 ## Ubuntu Requirements
 
-- gnu compiler
-- 
+- gnu compileraa.
+a0
 
-
+7\]

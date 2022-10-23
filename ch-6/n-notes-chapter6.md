@@ -107,11 +107,31 @@ It will print some unrelated values.
 ```
 
 ###	6.27
+![](./../img/2022-10-21-22-13-55.png)
 
+```cpp
+#include <iostream>
 
+#include<vector>
 
+using namespace std;
+int initializer_list_n(vector<int> myvect){
+    
+    int sum = 0;
+    for(auto it = myvect.begin(); it != myvect.end(); ++it){
+        sum += *it;
+    }
+
+    return sum;
+
+}
+```
 
 ###	6.30
+
+![](./../img/2022-10-22-10-46-34.png)
+
+Ignore because is not a programming.
 
 
 

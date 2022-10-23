@@ -1,4 +1,7 @@
 
+c6nt:
+	make compile-fr dir=ch-6 f=test_unit
+
 c6n:
 	make compile-fr dir=ch-6 f=test
 	make compile-fr dir=ch-6 f=ex6
@@ -15,6 +18,7 @@ save:
 compile-farg: 
 	cd ${dir} && g++ ${f}.cpp -o ${f}.o
 	cd ${dir} && ./${f}.o < inputfile
+	
 
 
 compile-fr: 
