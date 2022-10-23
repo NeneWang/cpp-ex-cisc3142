@@ -103,3 +103,11 @@ vector<int (*)(int, int)> c6s7p55()
     vectorOfFunctions.push_back(returnDiv);
     return vectorOfFunctions;
 }
+
+
+
+int incrementor(){
+  static int x= 0;
+  x++;
+  return (x-1);
+}
