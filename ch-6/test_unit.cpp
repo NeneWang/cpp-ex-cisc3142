@@ -40,12 +40,12 @@ void test_c6s7p55(void)
 
     cout << endl
          << "Testing vector of functions:" << endl;
-    for (auto it = begin(vectorOfFunctions); it != end(vectorOfFunctions); ++it)
+    for (auto it = begin(vectorOfFunctions); it != end(vectorOfFunctions); ++it, resultN++)
     {
 
         // cout << (*it)(a, b) << " "<< results[resultN] << endl;
         TEST_ASSERT_((*it)(a, b) == results[resultN], "Testing function...");
-        resultN++;
+        // resultN++;
     }
 }
 
@@ -152,10 +152,10 @@ void checkisFailure(void)
 
 TEST_LIST = {
     {"maintester", maintester},
-    {"test_recursivePrint", test_recursivePrint},
+    // {"test_recursivePrint", test_recursivePrint},
     {"test_c6s7p55", test_c6s7p55},
-    {"testVectorAdding", testVectorAdding},
-    {"testOverloadReturn", testOverloadReturn},
+    // {"testVectorAdding", testVectorAdding},
+    // {"testOverloadReturn", testOverloadReturn},
     // {"test_fixexc6ex27", test_fixexc6ex27},
     // {"Test Ex.21", test21},
     // {"Testing c6ex27a", c6ex27a},

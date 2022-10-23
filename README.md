@@ -1,11 +1,11 @@
-0# cpp-ex-cisc3142
+# cpp-ex-cisc3142
 Solved Exercises from the book
 
+## Study Plan (Nelson)
 
-## Work Distribution
+Here's a [Gantt Chart](https://app.diagrams.net/#G1FtsFi1zWgK0b5wG2Z7V8TEbjJ7Rzvfsj) indiciates the plan for studying.
 
-Nelson
-ActivityExercises%3==0
+
 
 
 ## Unit Testing
