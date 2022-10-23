@@ -33,3 +33,15 @@ const string &shorterString(const string &s1, const string &s2)
     return s1.size() <= s2.size() ? s1 : s2;
 }
 
+
+
+void add(int a, int b)
+{
+  cout << "sum = " << (a + b);
+}
+ 
+void add(double a, double b)
+{
+    cout << endl << "sum = " << (a + b);
+}
+ 
