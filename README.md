@@ -5,7 +5,7 @@ Solved Exercises from the book
 
 Here's a [Gantt Chart](https://app.diagrams.net/#G1FtsFi1zWgK0b5wG2Z7V8TEbjJ7Rzvfsj) indiciates the plan for studying.
 
-
+![](./img/2022-10-24-01-15-58.png)
 
 
 ## Unit Testing
