@@ -1,17 +1,20 @@
 #include <iostream>
+#include <cstdio>
 
 using namespace std;
 
 int main()
 {
     int item1, item2;
-    while (true)
+    cout << "Please enter some values" << endl;
+    while (cin >> item1 >> item2)
     {
         try
         {
-            2/0;
+            printf("Dividing %d and %d", item1, item2);
+            cout << item1/item2 << endl;
         }
-        catch (runtime_error err)
+        catch (exception err)
         {
             cout << "AN ERROR HAPPENDED";
             break;

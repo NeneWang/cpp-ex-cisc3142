@@ -2,7 +2,7 @@
 
 
 exam-nelson:
-	make compile-fr dir=exam f=try-catch
+	make compile-fin dir=exam f=try-catch inputfile=trycatch
 
 c6nt:
 	make compile-fr dir=ch-6 f=test_unit
