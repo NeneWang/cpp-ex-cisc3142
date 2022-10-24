@@ -14,7 +14,7 @@ int main()
             printf("Dividing %d and %d", item1, item2);
             cout << item1/item2 << endl;
         }
-        catch (exception err)
+        catch (...)
         {
             cout << "AN ERROR HAPPENDED";
             break;
