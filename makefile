@@ -1,10 +1,10 @@
 
+exam-nelson:
+	make compile-fr dir=exam f=test_unit
 
 c6nt:
 	make compile-fr dir=ch-6 f=test_unit
 
-exam-nelson:
-	make compile-fr dir=exam f=test_unit
 c6n:
 	make compile-fr dir=ch-6 f=test
 	make compile-fr dir=ch-6 f=ex6
