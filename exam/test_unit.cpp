@@ -67,7 +67,13 @@ void array2D()
 
     int ic[3][4] = {{ 0 }, { 4 }, { 8 }};
 
+    //Surprisingly the following items, are the continuation.
+    // 
+
+    int test1d[4] = {0};
+
     cout << "The followign should be 0: ?" << ia[1][2] << endl;
+    cout << test1d[2];
 
 }
 
