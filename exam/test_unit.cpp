@@ -35,7 +35,7 @@ void pointConstType(void){
     const pstring cstr = "Avenida Rivadavia";
 
     cout << cstr<< endl;
-    
+    // cstr = "sad"; // ILLEGAL, this reference cannot be changed
     const pstring *ps;
     // const char *cstr = 0; //Thorws an error because cstr had already been defined
     const char *cstr1 = 0;
