@@ -1,6 +1,8 @@
 
+
+
 exam-nelson:
-	make compile-fr dir=exam f=test_unit
+	make compile-fr dir=exam f=try-catch
 
 c6nt:
 	make compile-fr dir=ch-6 f=test_unit
