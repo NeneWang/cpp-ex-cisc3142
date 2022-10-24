@@ -2,6 +2,25 @@
 #include "another_func.cpp"
 #include "util.hpp"
 
+#include "string"
+
+using namespace std;
+
+
+void test_switch(void){
+    ;
+}
+
+void conditionalOperator(void){
+    int grade = 20;
+    string finalgrade = (grade < 60) ? "fail" : "pass";
+    TEST_CHECK_(finalgrade == "fail", "Test fail");
+
+    grade = 200;
+    finalgrade = (grade < 60) ? "fail" : "pass";
+    TEST_CHECK_(finalgrade == "pass", "Test pass");
+}
+
 void test_add(void){
     TEST_CHECK_(add(2, 2) == (2+2), "add(%d, %d)==%d", 2, 2, (2+2));
     TEST_CHECK_(add(2, 20) == (2+20), "add(%d, %d)==%d", 2, 20, (2+20));
@@ -19,6 +38,7 @@ void test_get1(void){
 
 
 TEST_LIST = {
+    {"conditionalOperator", conditionalOperator},
     {"int add(int, int);", test_add},
     {"int add(int, int);", test_fail},
     {"Test get1;", test_get1},

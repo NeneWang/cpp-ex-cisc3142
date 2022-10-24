@@ -78,6 +78,19 @@ void array2D()
 }
 
 
+void test_switch(void){
+    ;
+}
+
+void conditionalOperator(void){
+    int grade = 20;
+    string finalgrade = (grade < 60) ? "fail" : "pass";
+    TEST_CHECK_(finalgrade == "fail", "Test fail");
+
+    grade = 200;
+    finalgrade = (grade < 60) ? "fail" : "pass";
+    TEST_CHECK_(finalgrade == "pass", "Test pass");
+}
 
 void declTypeSpecifier(void)
 {
@@ -102,6 +115,7 @@ void test_p4(void)
 }
 
 TEST_LIST = {
+    {"conditionalOperator", conditionalOperator},
     {"array2D", array2D},
     {"declTypeSpecifier", declTypeSpecifier},
     {"pointConstType", pointConstType},

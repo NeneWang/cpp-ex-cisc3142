@@ -26,7 +26,7 @@ int main()
             int result = item1/item2;
             cout << result << endl;
         }
-        catch (Exception& e)
+        catch (runtime_error& e)
         {
             cout << "Exception occurred" << endl << e.what();
             break;
