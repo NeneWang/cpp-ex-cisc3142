@@ -42,6 +42,25 @@ void pointConstType(void){
 
 }
 
+double returnInt()
+{
+    return 2;
+}
+
+void declTypeSpecifier(void){
+    // decltype(returnInt) funcInt = 1;
+    // cout <<funcInt << endl;
+
+    int ci = 0, &cj = ci;
+    decltype(ci) x = 0; // x has type const int
+
+    decltype(ci) x2 = 23;
+    decltype(cj) y = x2; // y has type const int& and is bound to x
+    y = 10;
+    // cout << x2 <<endl;//Should print 23
+    TEST_ASSERT_(x2 == 10, "Should be 10");
+}
+
 
 void test_p4(void){
     vector<int> res = p4(2); //Should return 2
@@ -55,6 +74,7 @@ void test_p4(void){
 
 
 TEST_LIST = {
+    {"declTypeSpecifier", declTypeSpecifier},
     {"pointConstType", pointConstType},
     {"typeDefSample", typeDefSample},
     {"constantExpression", constantExpression},
