@@ -6,13 +6,16 @@
 #include <vector>
 using namespace std;
 
-void test_sizeof(void){
-    int x[15]; int *p = x;
-    cout << sizeof(x)/sizeof(*x) << endl;
-    cout << sizeof(p)/sizeof(*p) << endl;
+void test_sizeof(void)
+{
+    int x[15];
+    int *p = x;
+    cout << sizeof(x) / sizeof(*x) << endl;
+    cout << sizeof(p) / sizeof(*p) << endl;
 }
 
-void constantExpression(void){
+void constantExpression(void)
+{
     constexpr int *np = nullptr;
     int j = 0;
     constexpr int i = 42;
@@ -23,23 +26,23 @@ void constantExpression(void){
     // i =2; // This doesn't work because you cant reassign i
 }
 
-void typeDefSample(void){
+void typeDefSample(void)
+{
     typedef double decimales;
     decimales a = 2;
-    cout << a/3 << endl;
+    cout << a / 3 << endl;
 }
 
-
-void pointConstType(void){
+void pointConstType(void)
+{
     typedef char *pstring;
     const pstring cstr = "Avenida Rivadavia";
 
-    cout << cstr<< endl;
+    cout << cstr << endl;
     // cstr = "sad"; // ILLEGAL, this reference cannot be changed
     const pstring *ps;
     // const char *cstr = 0; //Thorws an error because cstr had already been defined
     const char *cstr1 = 0;
-
 }
 
 double returnInt()
@@ -47,7 +50,31 @@ double returnInt()
     return 2;
 }
 
-void declTypeSpecifier(void){
+void array2D()
+{
+    int ia[3][4] = {
+        {0, 1, 2, 3},  // initializers for the row indexed by 0
+        {4, 5, 6, 7},  // initializers for the row indexed by 1
+        {8, 9, 10, 11} // initializers for the row indexed by 2
+    };
+    int ib[3][4] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
+
+    TEST_ASSERT_(ia[2][2] == ib[2][2], "Is the same?");
+    TEST_ASSERT_(ia[2][1] == ib[2][1], "Is the same?");
+    TEST_ASSERT_(ia[2][3] == ib[2][3], "Is the same?");
+    TEST_ASSERT_(ia[1][3] == ib[1][3], "Is the same?");
+    TEST_ASSERT_(ia[1][2] == ib[1][2], "Is the same?");
+
+    int ic[3][4] = {{ 0 }, { 4 }, { 8 }};
+
+    cout << "The followign should be 0: ?" << ia[1][2] << endl;
+
+}
+
+
+
+void declTypeSpecifier(void)
+{
     // decltype(returnInt) funcInt = 1;
     // cout <<funcInt << endl;
 
@@ -61,19 +88,15 @@ void declTypeSpecifier(void){
     TEST_ASSERT_(x2 == 10, "Should be 10");
 }
 
-
-void test_p4(void){
-    vector<int> res = p4(2); //Should return 2
+void test_p4(void)
+{
+    vector<int> res = p4(2); // Should return 2
     TEST_ASSERT_(res.at(0) == 4, "Checking value");
     loop_vect(res);
-
 }
 
-
-
-
-
 TEST_LIST = {
+    {"array2D", array2D},
     {"declTypeSpecifier", declTypeSpecifier},
     {"pointConstType", pointConstType},
     {"typeDefSample", typeDefSample},
