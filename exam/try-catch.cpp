@@ -14,9 +14,9 @@ int main()
             printf("Dividing %d and %d", item1, item2);
             cout << item1/item2 << endl;
         }
-        catch (...)
+        catch (runtime_error& e)
         {
-            cout << "AN ERROR HAPPENDED";
+            cout << "Exception occurred" << endl << e.what();
             break;
         }
     }
