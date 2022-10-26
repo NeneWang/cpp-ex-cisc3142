@@ -43,6 +43,11 @@ void pointConstType(void)
     const pstring *ps;
     // const char *cstr = 0; //Thorws an error because cstr had already been defined
     const char *cstr1 = 0;
+
+    // const int r1 = 2;
+    // const int &const r2 = r1; // error: 'const' qualifiers cannot be applied to 'const int&'
+
+    cout <<  "Character cstr1 "  << cstr1 << endl;
 }
 
 double returnInt()

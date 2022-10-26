@@ -27,6 +27,3 @@ curl https://raw.githubusercontent.com/mity/acutest/master/include/acutest.h > a
 ## Ubuntu Requirements
 
 - gnu compileraa.
-a0
-
-7\]
