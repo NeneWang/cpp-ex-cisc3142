@@ -1,6 +1,7 @@
 
 /.vscode
 /book
+**/.DS_STORE
 
 # Prerequisites
 *.d
