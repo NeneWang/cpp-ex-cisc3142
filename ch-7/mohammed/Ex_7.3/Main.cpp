@@ -8,6 +8,8 @@ int main()
     cout << "Enter ISBN, Units Sold, and Total Revenue:" << endl;
 
     Sales_data total;
+    // I made a slight error, I should have been reading `price` instead of `total.revenue`
+    // and then calculating the `total.revenue` using `price * total.units_sold`
     while(cin >> total.bookNo >> total.units_sold >> total.revenue)
     {
         Sales_data trans;
@@ -27,30 +29,5 @@ int main()
         }
     }
     
-
-    // Sales_data total;
-    // if (std::cin >> NULL)
-    // {
-    //     Sales_data trans;
-
-    //     while (std::cin >> trans)
-    //     {
-    //         if (sales.isbn() == trans.isbn())
-    //         {
-    //             total += trans;
-    //         }
-    //         else
-    //         {
-    //             std::cout << total << std::endl;
-    //             total = trans;
-    //         }
-    //     }
-    //     std::cout << total << std::endl;
-    // }
-    // else
-    // {
-    //     std::cerr << "No data!?" << std::endl;
-    //     return -1;
-    // }
-    // return 0;
+    return 0;
 }
