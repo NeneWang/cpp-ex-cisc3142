@@ -1,4 +1,5 @@
 #include <iostream>
+
 struct Sales
 {
     std::string bookID;
