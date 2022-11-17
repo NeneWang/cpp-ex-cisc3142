@@ -1,5 +1,6 @@
 
-
+quiz-nelson:
+	make compile-fr dir=exam f=test_quiz
 
 exam-nelson:
 	make compile-fr dir=exam f=test_unit
