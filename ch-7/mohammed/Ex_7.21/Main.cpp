@@ -7,7 +7,7 @@ int main()
 {
     cout << "Enter ISBN, Units Sold, and Price (Ctrl+D to Stop):" << endl;
 
-    Sales_data total(cin);
+    Sales_data total();
     if (!cin.eof())
     {
         Sales_data trans(cin);
